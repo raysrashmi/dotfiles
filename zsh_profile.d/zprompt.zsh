@@ -107,12 +107,12 @@ _current_ruby() {
 
 _rprompt() {
   if [ $COLUMNS -gt 80 ]; then
-    echo "%{$fg[white]%}$(_current_ruby)%{$reset_color%}"
+    echo "%{$fg[red]%}$(_current_ruby)%{$reset_color%}"
   fi
 }
 
 _status_result() {
-  echo "%(?,$(_green "☺"), $(_red "☹"))"
+  echo "%(?,$(_red "❤ ❤ ❤"), $(_grey "❤ ❤ ❤"))"
 }
 
 PROMPT='$(_bracket_wrap "$(_basic)$(_separate $(_colored_git_branch))$(_separate $(_colored_git_difference))")$(_display_current_vim_mode) '
