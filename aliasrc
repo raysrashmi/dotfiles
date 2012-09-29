@@ -1,0 +1,24 @@
+# ruby/rails
+alias bes="bundle exec rspec"
+alias ber="bundle exec rake"
+alias bake="bundle exec rake"
+alias be="bundle exec"
+
+# git
+alias g="git"
+alias gbr="git remote prune origin && git branch -r"
+
+# filesystem
+alias ..="cd ../"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias o=$EDITOR
+alias dotf="cd $HOME/.dotfiles"
+alias ls="ls -G"
+alias mkdir="mkdir -p"
+
+# services
+alias nick="mplayer ~/Music/Theme\ Music/528491.wav > /dev/null 2>&1"
+
+# misc.
+alias timestamp="date +%Y%m%d%H%M%S"
