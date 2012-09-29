@@ -10,6 +10,7 @@ export NLS_LANG="AMERICAN_AMERICA.UTF8"
 
 
 export PATH=$PATH:$DYLD_LIBRARY_PATH
+export PATH=$PATH:$HOME/bin
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
