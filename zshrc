@@ -12,12 +12,7 @@ export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export PATH=$PATH:$DYLD_LIBRARY_PATH
 export PATH=$PATH:$HOME/bin
 
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-#export CC=/usr/bin/clang
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export CPPFLAGS=-I/opt/X11/include
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 source $HOME/.aliasrc
 
