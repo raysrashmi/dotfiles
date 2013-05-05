@@ -1,6 +1,6 @@
 set nocompatible  " Use Vim settings, rather then Vi settings
-set nobackup
-set nowritebackup
+set nobackup      " no backup files
+set nowritebackup  " no backup file while editing
 set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set history=50
 set ruler         " show the cursor position all the time
@@ -54,7 +54,9 @@ Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
-
+Bundle 'airblade/vim-gitgutter'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'shemerey/vim-peepopen'
 filetype plugin indent on
 
 augroup vimrcEx
@@ -135,6 +137,10 @@ nnoremap <leader><leader> <c-^>
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
+
+" Git Gutter
+let g:gitgutter_highlight_lines = 1
+let g:gitgutter_eager = 0
 
 " Markdown files end in .md
 au BufRead,BufNewFile *.md set filetype=markdown
