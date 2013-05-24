@@ -139,7 +139,6 @@ nnoremap <leader><leader> <c-^>
 let g:html_indent_tags = 'li\|p'
 
 " Git Gutter
-let g:gitgutter_highlight_lines = 1
 let g:gitgutter_eager = 0
 
 " Markdown files end in .md
@@ -160,4 +159,8 @@ map <leader>n :NERDTreeToggle<CR>
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
+endif
+
+if has('gui_macvim')
+  
 endif

@@ -69,7 +69,7 @@ desc "Push current branch"
 task :gp do
   branch_name = @git_help.current_branch
   puts "Pushing branch #{branch_name}"
-  system("git push origin #{branch_name}")
+  system("git push origin #{branch_name} -u -v")
 end
 
 desc "Rebase current branch"
