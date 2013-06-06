@@ -23,3 +23,6 @@ done
 current
 
 export PATH=/usr/local/bin:$PATH:$HOME/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
