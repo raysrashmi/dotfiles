@@ -32,6 +32,8 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'croaky/vim-colors-github'
 Bundle 'danro/rename.vim'
+Bundle 'itspriddle/vim-marked'
+Bundle 'jpo/vim-railscasts-theme'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
@@ -60,6 +62,7 @@ Bundle 'xenoterracide/html.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'shemerey/vim-peepopen'
+
 filetype plugin indent on
 
 augroup vimrcEx
@@ -162,8 +165,4 @@ map <leader>n :NERDTreeToggle<CR>
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
-endif
-
-if has('gui_macvim')
-  
 endif
