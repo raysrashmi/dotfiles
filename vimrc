@@ -147,6 +147,9 @@ let g:html_indent_tags = 'li\|p'
 " Git Gutter
 let g:gitgutter_eager = 0
 
+" neocomplcache.vim
+let g:neocomplcache_enable_at_startup = 1
+
 " Markdown files end in .md
 au BufRead,BufNewFile *.md set filetype=markdown
 
