@@ -29,6 +29,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
+Bundle "myusuf3/numbers.vim"
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Shougo/neocomplcache'
+Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'croaky/vim-colors-github'
 Bundle 'danro/rename.vim'
@@ -36,14 +40,14 @@ Bundle 'itspriddle/vim-marked'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
 Bundle 'nanki/treetop.vim'
-Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplcache'
+Bundle 'shemerey/vim-peepopen'
 Bundle 'timcharper/textile.vim'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-cucumber'
@@ -59,9 +63,6 @@ Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'shemerey/vim-peepopen'
 
 filetype plugin indent on
 
