@@ -4,9 +4,6 @@ require "rake"
 require "rake/tasklib"
 require "colored"
 require "fileutils"
-#require 'mysql'
-#require 'jdbc-mysql'
-
 
 class Object
   def blank?
@@ -127,7 +124,7 @@ end
 desc "Globally available task list"
 task :default do
   Rake.application.tasks.each do |task|
-    puts sprintf("%-25s : %s",task.name.bold.red,task.comment.blue)
+    puts sprintf("%-25s : %s",task.name.bold.red, '')
   end
 end
 
