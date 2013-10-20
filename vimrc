@@ -9,7 +9,6 @@ set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set hidden
 set hlsearch
-
 " To load proper ruby
 set shell=/bin/sh
 
@@ -24,7 +23,7 @@ endif
 filetype off " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+runtime macros/matchit.vim
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
@@ -87,7 +86,7 @@ set shiftwidth=2
 set expandtab
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·
+" set list listchars=tab:»·,trail:·
 
 " Use Ag (https://github.com/ggreer/the_silver_searcher) instead of Grep when
 " available
@@ -170,3 +169,4 @@ map <leader>n :NERDTreeToggle<CR>
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+let g:gitgutter_realtime = 0
