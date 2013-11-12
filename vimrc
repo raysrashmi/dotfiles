@@ -139,6 +139,10 @@ autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=rou
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
 
 " Treat <li> and <p> tags like the block tags they are

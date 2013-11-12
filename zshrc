@@ -10,6 +10,10 @@ done
 
 current
 
+export PGHOST=localhost
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 export PATH=/usr/local/bin:$PATH:$HOME/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
