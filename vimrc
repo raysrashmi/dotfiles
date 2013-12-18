@@ -28,29 +28,49 @@ runtime macros/matchit.vim
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
+
 " Define bundles via Github repos
-Bundle "myusuf3/numbers.vim"
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'Shougo/neocomplcache'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'bigloser/vim-ruby-cute'
+Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'croaky/vim-colors-github'
 Bundle 'danro/rename.vim'
+Bundle 'greplace.vim'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'henrik/vim-open-url'
 Bundle 'itspriddle/vim-marked'
 Bundle 'jpo/vim-railscasts-theme'
+Bundle 'jtratner/vim-flavored-markdown'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
 Bundle 'mileszs/ack.vim'
+Bundle 'myusuf3/numbers.vim'
 Bundle 'nanki/treetop.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'nono/jquery.vim'
+Bundle 'othree/html5.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'rizzatti/funcoo.vim'
+Bundle 'rking/ag.vim'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'shemerey/vim-peepopen'
+Bundle 'slim-template/vim-slim'
+Bundle 'thoughtbot/vim-rspec'
 Bundle 'timcharper/textile.vim'
+Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
@@ -59,19 +79,15 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/Auto-Pairs'
+Bundle 'vim-scripts/LustyExplorer'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
-Bundle 'bigloser/vim-ruby-cute'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'danro/rename.vim'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'henrik/vim-open-url'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/Auto-Pairs'
-
+Bundle 'xolox/vim-misc'
 
 filetype plugin indent on
 
@@ -154,6 +170,8 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" Using silver searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
