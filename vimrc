@@ -171,7 +171,18 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 " Using silver searcher
-let g:ackprg = 'ag --nogroup --nocolor --column'
+if executable('ag')
+    let g:ackprg = 'ag --nogroup --nocolor --column'
+
+    " Use Ag over Grep
+    set grepprg=ag\ --nogroup\ --nocolor
+    
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
+endif
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
