@@ -3,7 +3,8 @@ set vb
 
 " Color scheme
 syntax enable
-"  set background=light
+
+set background=dark
 colorscheme solarized
 
 " No toolbar
