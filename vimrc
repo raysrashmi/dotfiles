@@ -87,6 +87,7 @@ Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'xolox/vim-misc'
+Bundle 'chriskempson/vim-tomorrow-theme'
 
 filetype plugin indent on
 filetype plugin on
