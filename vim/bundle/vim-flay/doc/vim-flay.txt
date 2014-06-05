@@ -1,0 +1,93 @@
+*vimflay*
+===============================================================================
+    VimFlay : VimFlay analyzes Ruby code for structural similarities. Keep
+    your code DRY, give it a nice :Flay.
+
+    Author: Corey Prophitt
+    License: MIT License <http://opensource.org/licenses/MIT/>
+
+===============================================================================
+CONTENTS                                                       *vimflay-contents*
+
+    1. Introduction ............|vimflay-intro|
+    2. Options .................|vimflay-options|
+    3. Mappings ................|vimflay-mappings|
+    4. Commands ................|vimflay-commands|
+    5. Contributing ............|vimflay-contributing|
+
+===============================================================================
+INTRODUCTION                                                      *vimflay-intro*
+
+VimFlay is a light code analysis tool. The plugin wraps the flay gem created by
+Ryan Davis. Flay analyzes Ruby code and detects similar code structure. The
+name of variables or functions is ignored. Only the architecture/structure of
+the code is analyzed.
+
+===============================================================================
+OPTIONS                                                        *vimflay-options*
+
+Overview :
+    |vimflay-flay-on-open| .............. Toggle run on *.rb file load
+    |vimflay-flay-on-save| .............. Toggle run on *.rb file save
+    |vimflay-flay-piet_text| .............. Specify your own custom sign text
+
+g:flay_on_open                                           *vimflay-flay_on_open*
+    By default VimFlay does _not_ execute on open. If you wish to run Flay on
+    open, you can do so by setting g:flay_on_open to a non-zero value.
+
+        let g:flay_on_open = 1
+
+g:flay_on_save                                           *vimflay-flay_on_save*
+    By default VimFlay does _not_ execute on save. If you wish to run Flay on
+    open, you can do so by setting g:flay_on_save to a non-zero value.
+
+        let g:flay_on_save = 1
+
+
+g:flay_piet_text                                       *vimflay-flay_piet_text*
+    By default, the sign text is ">>" but you can specify your own.
+
+        let g:flay_piet_text="!!"
+
+===============================================================================
+MAPPINGS                                                     *vimflay-mappings*
+
+There are no default mappings, however you can specify your own mappings using
+the commands provided. See *vimflay-commands*.
+
+===============================================================================
+COMMANDS                                                     *vimflay-commands*
+
+                                                                         :*Flay*
+                                                                 *vimflay-:Flay*
+:Flay
+    Process the current file and mark similar areas with signs.
+                                                                    *:FlayClear*
+                                                            *vimflay-:FlayClear*
+:FlayClear
+    Clear the signs set by |Flay|.
+                                                                    *:FlayToggle*
+                                                            *vimflay-:FlayToggle*
+:FlayToggle
+    Toggle between |Flay| and |FlayClear| alternatively.
+
+                                                                    *:FlayList*
+                                                            *vimflay-:FlayList*
+:FlayList
+    List all line numbers with signs.
+
+===============================================================================
+CONTRIBUTING                                              vimflay-contributing*
+
+1. Reporting Bugs:
+    Use Github Issue Tracker
+    (https://github.com/prophittcorey/vim-flay/issues) for filing bugs.
+
+2. Contributing to Code
+    If you want to take a stab at it, by all means, send me a pull request
+    on Github (https://github.com/prophittcorey/vim-flay) or get in touch
+    with me directly via e-mail at prophitt [dot] corey [at] gmail.com.
+
+===============================================================================
+
+vim: ai tabstop=4 expandtab shiftwidth=4 softtabstop=4 ft=help

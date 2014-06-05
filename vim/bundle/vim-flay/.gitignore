@@ -1,0 +1,39 @@
+# OS
+._*
+[Tt]humbs.db
+[Dd]esktop.ini
+.DS_Store
+.Trashes
+.Spotlight-V100
+
+# Folders
+bin/
+build/
+dist/
+node_modules/
+
+# Node
+npm-debug.log
+
+# Python
+*.pyc
+__init__.py
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Ctags
+tags
+
+# Binaries
+*.out
+*.o
+*.exe
+*.dylib
+*.lib
+*.a
