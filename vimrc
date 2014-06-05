@@ -32,15 +32,16 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
-Bundle 'Lokaltog/vim-powerline'
+
 Bundle 'Shougo/neocomplcache'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bigloser/vim-ruby-cute'
+Bundle 'bling/vim-airline'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'croaky/vim-colors-github'
 Bundle 'danro/rename.vim'
-Bundle 'greplace.vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'henrik/vim-open-url'
 Bundle 'itspriddle/vim-marked'
@@ -55,6 +56,7 @@ Bundle 'myusuf3/numbers.vim'
 Bundle 'nanki/treetop.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'nono/jquery.vim'
+Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'othree/html5.vim'
 Bundle 'pbrisbin/vim-mkdir'
 Bundle 'rizzatti/dash.vim'
@@ -77,8 +79,6 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-vividchalk'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/Auto-Pairs'
 Bundle 'vim-scripts/LustyExplorer'
@@ -87,9 +87,6 @@ Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'xolox/vim-misc'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'ngmy/vim-rubocop'
-Bundle 'ntpeters/vim-better-whitespace'
 
 filetype plugin indent on
 filetype plugin on
@@ -130,6 +127,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Numbers
 set number
@@ -140,7 +138,6 @@ set wildmode=longest,list
 " Splits
 set splitbelow
 set splitright
-
 
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<S-Tab>"
@@ -173,9 +170,6 @@ map <Leader>ct :!ctags -R .<CR>
 autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb
 autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
 
-"Remove whitespace
-autocmd BufWritePre <buffer> :%s/\s\+$//e
-
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
@@ -191,9 +185,6 @@ let g:html_indent_tags = 'li\|p'
 " Git Gutter
 let g:gitgutter_eager = 0
 let g:gitgutter_realtime = 0
-
-" Rubocop settings
-let g:vimrubocop_config = '/Users/raysrashmi/rubocop.yml'
 
 " Neocomplcache options
 "let g:neocomplcache_enable_at_startup = 1

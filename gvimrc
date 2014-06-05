@@ -20,3 +20,6 @@ set guioptions-=r " Removes right hand scroll bar
 if filereadable($HOME . "/.gvimrc.local")
   source ~/.gvimrc.local
 endif
+
+let g:airline_powerline_fonts = 1
+set guifont=Source\ Code\ Pro\ for\ Powerline:h13
