@@ -1,4 +1,4 @@
-# ruby/rails
+a ruby/rails
 alias bes="bundle exec rspec"
 alias ber="bundle exec rake"
 alias bake="bundle exec rake"
@@ -54,3 +54,4 @@ alias ls="ls -G"
 alias timestamp="date +%Y%m%d%H%M%S"
 alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare'
 alias mds='middleman server'
+alias migrate= 'rake db:migrate db:rollback && rake db:migrate'

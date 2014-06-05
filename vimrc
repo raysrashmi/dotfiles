@@ -88,6 +88,8 @@ Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'xolox/vim-misc'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'ngmy/vim-rubocop'
+Bundle 'ntpeters/vim-better-whitespace'
 
 filetype plugin indent on
 filetype plugin on
@@ -171,6 +173,9 @@ map <Leader>ct :!ctags -R .<CR>
 autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb
 autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
 
+"Remove whitespace
+autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
@@ -186,6 +191,9 @@ let g:html_indent_tags = 'li\|p'
 " Git Gutter
 let g:gitgutter_eager = 0
 let g:gitgutter_realtime = 0
+
+" Rubocop settings
+let g:vimrubocop_config = '/Users/raysrashmi/rubocop.yml'
 
 " Neocomplcache options
 "let g:neocomplcache_enable_at_startup = 1
