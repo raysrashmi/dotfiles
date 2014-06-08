@@ -16,7 +16,6 @@ set scrolloff=5
 " To load proper ruby
 set shell=/bin/sh
 
-
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -56,7 +55,6 @@ Bundle 'myusuf3/numbers.vim'
 Bundle 'nanki/treetop.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'nono/jquery.vim'
-Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'othree/html5.vim'
 Bundle 'pbrisbin/vim-mkdir'
 Bundle 'rizzatti/dash.vim'
@@ -127,8 +125,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Numbers
 set number
@@ -212,6 +208,11 @@ autocmd BufLeave,FocusLost * silent! wall
 " completion for Markdown and git commit
 autocmd FileType gitcommit setlocal spell
 autocmd FileType markdown setlocal spell
+
+augroup prewrites
+   autocmd!
+    autocmd BufWritePre,FileWritePre * :%s/\s\+$//e | %s/\r$//e
+augroup END
 
 " Numbers.vim
 nnoremap <F3> :NumbersToggle<CR>

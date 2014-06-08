@@ -14,7 +14,7 @@ class Object
   def present?
     !blank?
   end
-  
+
   def presence
     self if present?
   end
@@ -131,7 +131,7 @@ end
 desc "Update solaro"
 task :sl do
   solaro_dir = File.join(ENV['HOME'],'checkout','solaro')
-  cd(solaro_dir) do 
+  cd(solaro_dir) do
     system("git fetch")
     Rake.application.invoke_task("gm")
   end
@@ -169,7 +169,7 @@ module Sake
     def truncate_db(db,username = 'root',password = '', host = 'localhost')
       puts "Truncating Database :  ".bold + db.red.bold
       puts "** Press enter to continue **".green.bold
-      
+
       STDIN.getc
       connection = Mysql.connect(host,username,password,db)
       result = connection.real_query("show tables")
@@ -187,7 +187,3 @@ end
 @git_help = Sake::Git.new()
 
 Rake.application.top_level()
-
-
-
-

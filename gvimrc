@@ -5,7 +5,7 @@ set vb
 syntax enable
 
 set background=dark
-colorscheme Tomorrow-Night-Eighties
+colorscheme solarized
 
 " No toolbar
 set guioptions-=T
