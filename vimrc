@@ -87,7 +87,7 @@ Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'xolox/vim-misc'
-Bundle 'tsaleh/vim-matchit'
+Bundle 'raysrashmi/vim-matchit'
 
 filetype plugin indent on
 filetype plugin on

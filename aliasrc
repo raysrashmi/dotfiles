@@ -1,4 +1,3 @@
-a ruby/rails
 alias bes="bundle exec rspec"
 alias ber="bundle exec rake"
 alias bake="bundle exec rake"
