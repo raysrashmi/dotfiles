@@ -85,7 +85,7 @@ Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'xolox/vim-misc'
-Bundle 'raysrashmi/vim-matchit'
+Bundle 'prophittcorey/vim-flay'
 
 filetype plugin indent on
 filetype plugin on
@@ -240,6 +240,7 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+nnoremap <Leader>f :Flay<CR>
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
