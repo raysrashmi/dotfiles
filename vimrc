@@ -88,6 +88,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'prophittcorey/vim-flay'
 Plugin 'raysrashmi/vim-matchit'
 
+call vundle#end()
+
 filetype plugin indent on
 filetype plugin on
 
