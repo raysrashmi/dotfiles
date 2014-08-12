@@ -1,0 +1,65 @@
+# ADD LOCAL CONFIGURATION HERE
+
+
+# DO NOT EDIT BELOW THIS LINE
+[color]
+	ui = always
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[diff]
+	tool = vimdiff
+[difftool]
+  prompt = false
+
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+[alias]
+  ci = commit
+  co = checkout
+  c = commit -m
+  a = add
+  di = diff
+  dic = diff --cached
+  pl = pull
+  ps = push
+  plre = pull --rebase
+  st = status -sb
+  out = log origin..HEAD
+  bra = branch -a
+  create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
+  delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  switch = !legit switch \"$@\"
+  branches = !legit branches
+  sprout = !legit sprout \"$@\"
+  unpublish = !legit unpublish \"$@\"
+  harvest = !legit harvest \"$@\"
+  sync = !legit sync \"$@\"
+  publish = !legit publish \"$@\"
+  graft = !legit graft \"$@\"
+
+[user]
+	name = Rashmi Yadav
+	email = rays.rashmi@gmail.com
+[mergetool "diffmerge"]
+  cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+  trustExitCode = false
+[github]
+  user = raysrashmi
+[mergetool]
+	keepBackup = true
+[help]
+	autocorrect = 1

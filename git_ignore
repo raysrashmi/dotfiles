@@ -1,0 +1,11 @@
+.*.swp
+tags
+.swo
+*.elc
+*.scratch.*
+nbproject
+.idea
+vendor/bundle
+.rbx
+.DS_Store
+.powenv
