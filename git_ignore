@@ -10,3 +10,6 @@ vendor/bundle
 .DS_Store
 .powenv
 .rvmrc
+.env
+.ruby_version
+a.txt

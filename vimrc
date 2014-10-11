@@ -87,6 +87,7 @@ Plugin 'xenoterracide/html.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'prophittcorey/vim-flay'
 Plugin 'raysrashmi/vim-matchit'
+Plugin 'AndrewRadev/splitjoin.vim'
 
 call vundle#end()
 
@@ -215,6 +216,11 @@ autocmd FileType markdown setlocal spell
 augroup prewrites
    autocmd!
     autocmd BufWritePre,FileWritePre * :%s/\s\+$//e | %s/\r$//e
+augroup END
+
+"tab space 4 for html
+augroup vimrcEx
+  au FileType html,eruby setlocal sw=4 sts=4
 augroup END
 
 " Numbers.vim

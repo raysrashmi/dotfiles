@@ -53,7 +53,7 @@
 
 [user]
 	name = Rashmi Yadav
-	email = rays.rashmi@gmail.com
+	email = rashmi.yadav@mynewsdesk.com
 [mergetool "diffmerge"]
   cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
   trustExitCode = false
@@ -63,3 +63,8 @@
 	keepBackup = true
 [help]
 	autocorrect = 1
+[git-pair]
+	authors = Zoee Silcock <zoee.silcock@mynewsdesk.com>
+	authors = Rashmi Yadav <rashmi.yadav@mynewsdesk.com>
+	pattern = dev+%name+%name@%domain
+	authors = Emil Löfquist <emil.lofquist@newsdesk.se>

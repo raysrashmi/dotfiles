@@ -17,3 +17,5 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 export PATH=/usr/local/bin:$PATH:$HOME/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
