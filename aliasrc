@@ -54,4 +54,4 @@ alias mds='middleman server'
 alias migrate='rake db:migrate db:rollback && rake db:migrate'
 
 alias errorapp='cd ~/checkouts/errorapp'
-alias mnd='cd /Users/rashmiyadav/mnd/Projects/mynewsdesk'
+alias mynewsdesk='cd /Users/rashmiyadav/mnd/Projects/mynewsdesk'

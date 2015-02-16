@@ -20,7 +20,6 @@ function short_path {
 }
 
 current() {
-  echof "rayssssssss"
   if [[ -f $CURRENT_PROJECT_PATH ]]; then
     cd "$(cat $CURRENT_PROJECT_PATH)"
   fi
