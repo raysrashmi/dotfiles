@@ -85,9 +85,9 @@ Plugin 'vim-scripts/greplace.vim'
 Plugin 'vim-scripts/tComment'
 Plugin 'xenoterracide/html.vim'
 Plugin 'xolox/vim-misc'
-Plugin 'prophittcorey/vim-flay'
 Plugin 'raysrashmi/vim-matchit'
 Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'esneider/YUNOcommit.vim'
 
 call vundle#end()
 
@@ -258,6 +258,7 @@ endif
 
 " The Silver Searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:YUNOcommit_after = 5
 
 " Rspec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>

@@ -24,7 +24,7 @@
   prompt = false
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/rashmiyadav/.gitignore
   editor = vim
 [alias]
   ci = commit
@@ -68,3 +68,11 @@
 	authors = Rashmi Yadav <rashmi.yadav@mynewsdesk.com>
 	pattern = dev+%name+%name@%domain
 	authors = Emil Löfquist <emil.lofquist@newsdesk.se>
+[push]
+	default = matching
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
