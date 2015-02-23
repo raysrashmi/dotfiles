@@ -11,7 +11,6 @@ alias ..="cd ../"
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias o=$EDITOR
-alias dotf="cd $HOME/.dotfiles"
 alias ls="ls -G"
 alias mkdir="mkdir -p"
 alias s="sake"
@@ -55,3 +54,6 @@ alias migrate='rake db:migrate db:rollback && rake db:migrate'
 
 alias errorapp='cd ~/checkouts/errorapp'
 alias mynewsdesk='cd /Users/rashmiyadav/mnd/Projects/mynewsdesk'
+alias mndxw='cd /Users/rashmiyadav/mnd/Projects/mndx-web'
+alias playtube='cd /Users/rashmiyadav/checkouts/playtube'
+alias doft='cd /Users/rashmiyadav/checkouts/dotfiles'

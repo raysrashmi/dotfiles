@@ -1,13 +1,19 @@
 export ALIASFILE=$HOME/checkouts/dotfiles/aliasrc
 
-function short_path {
+function path_alias {
   if  [ $2 ]
   then
-    echo "with argumentsssssssssssssss"
     echo "alias $1='cd $2'" >> "$ALIASFILE"
   else
     echo "alias $1='cd `pwd`'" >> "$ALIASFILE"
   fi
 
   echo "created shortcut for $1"
+}
+
+function rm_alias {
+  if [ $1 ]
+  then
+    sed -e "/$1/d" "$ALIASFILE" > aliasrc.tmp && mv aliasrc.tmp $ALIASFILE
+  fi
 }
