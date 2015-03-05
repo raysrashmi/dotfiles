@@ -4,8 +4,7 @@ set vb
 " Color scheme
 syntax enable
 
-set background=dark
-colorscheme solarized
+colorscheme railscasts
 
 " No toolbar
 set guioptions-=T
@@ -22,4 +21,4 @@ if filereadable($HOME . "/.gvimrc.local")
 endif
 
 let g:airline_powerline_fonts = 1
-set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+set guifont=Monaco:h16

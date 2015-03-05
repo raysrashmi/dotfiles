@@ -24,7 +24,7 @@
   prompt = false
 
 [core]
-	excludesfile = /Users/rashmiyadav/.gitignore
+	excludesfile = /Users/raysrashmi/.gitignore
   editor = vim
 [alias]
   ci = commit
@@ -53,7 +53,7 @@
 
 [user]
 	name = Rashmi Yadav
-	email = rashmi.yadav@mynewsdesk.com
+	email = rays.rashmi@gmail.com
 [mergetool "diffmerge"]
   cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
   trustExitCode = false
@@ -64,15 +64,12 @@
 [help]
 	autocorrect = 1
 [git-pair]
-	authors = Zoee Silcock <zoee.silcock@mynewsdesk.com>
-	authors = Rashmi Yadav <rashmi.yadav@mynewsdesk.com>
-	pattern = dev+%name+%name@%domain
-	authors = Emil Löfquist <emil.lofquist@newsdesk.se>
+	authors = Rashmi Yadav <rays.rashmi@gmail.com>
 [push]
 	default = matching
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
