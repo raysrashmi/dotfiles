@@ -4,7 +4,7 @@ set vb
 " Color scheme
 syntax enable
 
-colorscheme railscasts
+colorscheme github
 
 " No toolbar
 set guioptions-=T

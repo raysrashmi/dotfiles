@@ -35,3 +35,9 @@ You can find your zsh location by by running
    git clone https://github.com/gmarik/Vundle.vim
 
    run PluginInstall
+
+5. For ctags
+    a. brew install ctags
+    b. Then in mvim press leader key followed by ct
+
+7. brew install the_silver_searcher
