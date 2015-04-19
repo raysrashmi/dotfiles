@@ -218,10 +218,10 @@ augroup prewrites
     autocmd BufWritePre,FileWritePre * :%s/\s\+$//e | %s/\r$//e
 augroup END
 
-"tab space 4 for html
-augroup vimrcEx
-  au FileType html,eruby setlocal sw=4 sts=4
-augroup END
+" "tab space 4 for html
+" augroup vimrcEx
+"   au FileType html,eruby setlocal sw=4 sts=4
+" augroup END
 
 " Numbers.vim
 nnoremap <F3> :NumbersToggle<CR>

@@ -160,9 +160,8 @@ end
 module Sake
   class Git
     def current_branch
-      cmd_output = `git symbolic-ref HEAD`
-      branch_name = cmd_output.strip.split("/")[-1]
-      branch_name
+      cmd_output = `git symbolic-ref --short HEAD`
+      cmd_output.strip
     end
   end
   class Database

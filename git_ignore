@@ -11,5 +11,5 @@ vendor/bundle
 .powenv
 .rvmrc
 .env
-.ruby_version
 a.txt
+.powrc
