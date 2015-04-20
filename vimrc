@@ -46,6 +46,7 @@ Plugin 'henrik/vim-open-url'
 Plugin 'itspriddle/vim-marked'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'JazzCore/ctrlp-cmatcher'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/gist-vim'
@@ -129,6 +130,8 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 " Numbers
 set number
