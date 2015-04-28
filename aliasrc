@@ -53,7 +53,5 @@ alias mds='middleman server'
 alias migrate='rake db:migrate db:rollback && rake db:migrate'
 
 alias errorapp='cd ~/checkouts/errorapp'
-alias mynewsdesk='cd /Users/rashmiyadav/mnd/Projects/mynewsdesk'
-alias mndxw='cd /Users/rashmiyadav/mnd/Projects/mndx-web'
 alias playtube='cd /Users/rashmiyadav/checkouts/playtube'
-alias doft='cd /Users/rashmiyadav/checkouts/dotfiles'
+alias dotf='cd /Users/rashmiyadav/checkouts/dotfiles'
