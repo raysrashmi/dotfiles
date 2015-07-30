@@ -1,0 +1,2 @@
+# Autocomplete
+require 'irb/completion'
