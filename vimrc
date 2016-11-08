@@ -16,6 +16,7 @@ set scrolloff=5
 " To load proper ruby
 set shell=/bin/sh
 
+set rtp+=~/.vim/bundle/Vundle.vim
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -24,7 +25,6 @@ endif
 
 " Declare bundles are handled via Vundle
 filetype off " required!
-set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Let Vundle manage Vundle
@@ -89,6 +89,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'raysrashmi/vim-matchit'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'esneider/YUNOcommit.vim'
+Plugin 'dag/vim-fish'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
@@ -253,6 +255,7 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Leader>f :Flay<CR>
+set clipboard=unnamed
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
@@ -270,3 +273,8 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 colorscheme github
+
+syntax enable
+filetype plugin indent on
+" Set up :make to use fish for syntax checking.
+compiler fish
