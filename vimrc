@@ -23,6 +23,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+
 " Declare bundles are handled via Vundle
 filetype off " required!
 call vundle#begin()
@@ -90,7 +91,6 @@ Plugin 'raysrashmi/vim-matchit'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'esneider/YUNOcommit.vim'
 Plugin 'dag/vim-fish'
-Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
